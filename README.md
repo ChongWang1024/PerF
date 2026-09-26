@@ -1,6 +1,4 @@
-# Persistence Forcing
-
-### Exploiting Feature Specialization in Pixel-Space Diffusion
+# Persistence Forcing：Exploiting Feature Specialization in Pixel-Space Diffusion
 
 *Chong Wang¹, Zixuan Fu¹, Shiqi Huang¹, Siyuan Yang², Hao Cheng³, Bihan Wen¹*  
 ¹Nanyang Technological University    ²KTH Royal Institute of Technology    ³Hebei University of Technology
