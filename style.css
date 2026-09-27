@@ -14,7 +14,8 @@ h1{color:var(--blue)}
 .button[aria-disabled=true]:hover{transform:none}
 .authors{margin:0 auto 24px;max-width:1080px;color:#526079}
 .author-list{margin:0;font-size:18px;line-height:1.7;font-style:italic;color:#34425a}
-.author-list a:hover{color:var(--blue)}
+.author-list a{color:#5676c9;text-decoration:underline;text-decoration-color:#b8c8ef;text-underline-offset:3px}
+.author-list a:hover{color:var(--blue);text-decoration-color:currentColor}
 .author-list sup,.affiliations sup{font-size:.68em;vertical-align:super;line-height:0}
 .affiliations{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 24px;margin-top:5px;font-size:13px;line-height:1.7;color:var(--muted)}
 .resource-button{min-width:132px;padding:12px 24px;border:0;border-radius:999px;background:var(--blue);color:#fff;font-size:16px;font-weight:500;gap:10px}
