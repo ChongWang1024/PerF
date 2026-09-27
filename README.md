@@ -1,6 +1,6 @@
 # Persistence Forcing：Exploiting Feature Specialization in Pixel-Space Diffusion
 
-*Chong Wang¹, Zixuan Fu¹, Shiqi Huang¹, Siyuan Yang², Hao Cheng³, Bihan Wen¹*  
+*[Chong Wang](https://scholar.google.com/citations?user=QlZK_hQAAAAJ&hl=zh-CN)¹, [Zixuan Fu](https://scholar.google.com/citations?user=iWALaSYAAAAJ&hl=zh-CN)¹, [Shiqi Huang](https://scholar.google.com/citations?user=rHPXYB0AAAAJ&hl=en)¹, [Siyuan Yang](https://siyuan9446.github.io/)², [Hao Cheng](https://scholar.google.com/citations?user=7Bv4y4YAAAAJ&hl=zh-CN)³, [Bihan Wen](https://personal.ntu.edu.sg/bihan.wen/)¹*<br>
 ¹Nanyang Technological University    ²KTH Royal Institute of Technology    ³Hebei University of Technology
 
 ![arXiv coming soon](https://img.shields.io/badge/arXiv-Coming%20Soon-b31b1b?logo=arxiv)[![Project page](https://img.shields.io/badge/Project-Page-3273dc?logo=googlechrome&logoColor=white)](https://chongwang1024.github.io/PerF/)[![Hugging Face models](https://img.shields.io/badge/Hugging%20Face-Models-ffd21e?logo=huggingface&logoColor=black)](https://huggingface.co/ChongWang1024/PerF)
