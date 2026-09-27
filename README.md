@@ -38,7 +38,7 @@ conda activate perf
 Example command for training PerF-B/16 on ImageNet 256x256 for 600 epochs:
 
 ```bash
-torchrun --standalone --nproc_per_node=8 \
+python -m torch.distributed.run --standalone --nproc_per_node=8 \
 main_perf.py \
 --model PerF-B/16 --proj_dropout 0.0 \
 --P_mean -0.8 --P_std 0.8 --noise_scale 1.0 \
@@ -52,7 +52,7 @@ main_perf.py \
 Example command for training PerF-L/16 on ImageNet 256x256 for 600 epochs:
 
 ```bash
-torchrun --standalone --nproc_per_node=8 \
+python -m torch.distributed.run --standalone --nproc_per_node=8 \
 main_perf.py \
 --model PerF-L/16 --proj_dropout 0.0 \
 --P_mean -0.8 --P_std 0.8 --noise_scale 1.0 \
@@ -66,7 +66,7 @@ main_perf.py \
 Example command for training PerF-H/16 on ImageNet 256x256 for 600 epochs:
 
 ```bash
-torchrun --standalone --nproc_per_node=8 \
+python -m torch.distributed.run --standalone --nproc_per_node=8 \
 main_perf.py \
 --model PerF-H/16 --proj_dropout 0.2 \
 --P_mean -0.8 --P_std 0.8 --noise_scale 1.0 \
@@ -80,7 +80,7 @@ main_perf.py \
 Example command for training PerF-H/32 on ImageNet 512x512 for 600 epochs:
 
 ```bash
-torchrun --standalone --nproc_per_node=8 \
+python -m torch.distributed.run --standalone --nproc_per_node=8 \
 main_perf.py \
 --model PerF-H/32 --proj_dropout 0.2 \
 --P_mean -0.8 --P_std 0.8 --noise_scale 2.0 \
@@ -113,7 +113,7 @@ Pretrained models are available on [Hugging Face](https://huggingface.co/ChongWa
 Evaluate PerF-B/16 on ImageNet 256x256:
 
 ```bash
-torchrun --standalone --nproc_per_node=8 \
+python -m torch.distributed.run --standalone --nproc_per_node=8 \
 main_perf.py \
 --model PerF-B/16 --img_size 256 --noise_scale 1.0 \
 --gen_bsz 256 --num_images 50000 \
@@ -129,7 +129,7 @@ main_perf.py \
 Evaluate PerF-H/16 on ImageNet 256x256:
 
 ```bash
-torchrun --standalone --nproc_per_node=8 \
+python -m torch.distributed.run --standalone --nproc_per_node=8 \
 main_perf.py \
 --model PerF-H/16 --img_size 256 --noise_scale 1.0 \
 --gen_bsz 256 --num_images 50000 \
@@ -145,7 +145,7 @@ main_perf.py \
 Evaluate PerF-H/32 on ImageNet 512x512:
 
 ```bash
-torchrun --standalone --nproc_per_node=8 \
+python -m torch.distributed.run --standalone --nproc_per_node=8 \
 main_perf.py \
 --model PerF-H/32 --img_size 512 --noise_scale 2.0 \
 --gen_bsz 256 --num_images 50000 \
