@@ -126,6 +126,22 @@ main_perf.py \
 --data_path ${IMAGENET_PATH}
 ```
 
+Evaluate PerF-L/16 on ImageNet 256x256:
+
+```bash
+python -m torch.distributed.run --standalone --nproc_per_node=8 \
+main_perf.py \
+--model PerF-L/16 --img_size 256 --noise_scale 1.0 \
+--gen_bsz 256 --num_images 50000 \
+--cfg 2.7 --pg 2.8 \
+--cfg_interval_min 0.1 --cfg_interval_max 1.0 \
+--pg_interval_min 0.0 --pg_interval_max 1.0 \
+--sampling_method heun --num_sampling_steps 50 \
+--evaluate_gen \
+--output_dir ${CKPT_DIR} --resume ${CKPT_DIR} \
+--data_path ${IMAGENET_PATH}
+```
+
 Evaluate PerF-H/16 on ImageNet 256x256:
 
 ```bash
