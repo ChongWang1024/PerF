@@ -192,7 +192,8 @@ def save_training(path, objective, optimizer, ema, epoch, args, model_args, devi
             optimizer.state_dict()
             if keep_irepa
             else optimizer_state_for_parameters(
-                optimizer, objective.denoiser.net.parameters()
+                optimizer,
+                (p for p in objective.denoiser.net.parameters() if p.requires_grad),
             )
         )
         atomic_save(
