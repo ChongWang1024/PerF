@@ -15,7 +15,7 @@
 
 This is the PyTorch implementation of **Persistence Forcing: Exploiting Feature Specialization in Pixel-Space Diffusion**.
 
-PerF exploits the persistent–active feature organization that emerges under heterogeneous refinement. **Persistent-to-Active Conditioning (P-to-A Cond.)** allows persistent features to guide active refinement, while **Persistence Guidance (PG)** strengthens their contribution during sampling.
+PerF is a class-conditional pixel-space diffusion Transformer for ImageNet generation. Heterogeneous refinement induces two specialized feature groups: persistent features preserve global visual structure, while active features refine local details. **Persistent-to-Active Conditioning (P-to-A Cond.)** connects these groups, and **Persistence Guidance (PG)** strengthens structural guidance during sampling.
 
 ## Dataset
 
@@ -97,17 +97,16 @@ main_perf.py \
 
 To resume training, append `--resume "${OUTPUT_DIR}"`
 
-## Checkpoints
+## Results and Checkpoints
 
-Pretrained models are available on [Hugging Face](https://huggingface.co/ChongWang1024/PerF).
+FID scores are for class-conditional ImageNet generation. Pretrained models are available on [Hugging Face](https://huggingface.co/ChongWang1024/PerF).
 
-
-| Dataset          | Model     | Hugging Face |
-| ---------------- | --------- | ------------ |
-| ImageNet 256x256 | PerF-B/16 | [Download](https://huggingface.co/ChongWang1024/PerF/resolve/main/perf-b16-256/checkpoint-last.pth) |
-| ImageNet 256x256 | PerF-L/16 | [Download](https://huggingface.co/ChongWang1024/PerF/resolve/main/perf-l16-256/checkpoint-last.pth) |
-| ImageNet 256x256 | PerF-H/16 | [Download](https://huggingface.co/ChongWang1024/PerF/resolve/main/perf-h16-256/checkpoint-last.pth) |
-| ImageNet 512x512 | PerF-H/32 | [Download](https://huggingface.co/ChongWang1024/PerF/resolve/main/perf-h32-512/checkpoint-last.pth) |
+| Dataset | Model | Parameters | FID ↓ | Hugging Face |
+| --- | --- | ---: | ---: | --- |
+| ImageNet 256×256 | PerF-B/16 | 137M | 2.81 | [Download](https://huggingface.co/ChongWang1024/PerF/resolve/main/perf-b16-256/checkpoint-last.pth) |
+| ImageNet 256×256 | PerF-L/16 | 471M | 1.91 | [Download](https://huggingface.co/ChongWang1024/PerF/resolve/main/perf-l16-256/checkpoint-last.pth) |
+| ImageNet 256×256 | PerF-H/16 | 987M | 1.63 | [Download](https://huggingface.co/ChongWang1024/PerF/resolve/main/perf-h16-256/checkpoint-last.pth) |
+| ImageNet 512×512 | PerF-H/32 | 992M | 1.76 | [Download](https://huggingface.co/ChongWang1024/PerF/resolve/main/perf-h32-512/checkpoint-last.pth) |
 
 
 
@@ -183,3 +182,20 @@ main_perf.py \
 ## Acknowledgements
 
 This code builds on [JiT](https://github.com/LTH14/JiT), with core layer references to [SiT](https://github.com/willisma/SiT) and [Lightning-DiT](https://github.com/hustvl/LightningDiT).
+
+## Citation
+
+If you find PerF is useful in your research or applications, please consider giving us a star ⭐ and citing it by the following BibTeX entry.
+
+```bibtex
+@misc{wang2026persistenceforcing,
+  title={Persistence Forcing: Exploiting Feature Specialization in Pixel-Space Diffusion},
+  author={Chong Wang and Zixuan Fu and Shiqi Huang and Siyuan Yang and Hao Cheng and Bihan Wen},
+  year={2026},
+  eprint={2609.36014},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  doi={10.48550/arXiv.2609.36014},
+  url={https://arxiv.org/abs/2609.36014}
+}
+```

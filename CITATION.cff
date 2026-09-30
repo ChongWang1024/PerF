@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use PerF, please cite the paper below."
+title: "PerF: Persistence Forcing"
+type: software
+license: MIT
+repository-code: "https://github.com/ChongWang1024/PerF"
+authors:
+  - family-names: Wang
+    given-names: Chong
+  - family-names: Fu
+    given-names: Zixuan
+  - family-names: Huang
+    given-names: Shiqi
+  - family-names: Yang
+    given-names: Siyuan
+  - family-names: Cheng
+    given-names: Hao
+  - family-names: Wen
+    given-names: Bihan
+preferred-citation:
+  type: generic
+  title: "Persistence Forcing: Exploiting Feature Specialization in Pixel-Space Diffusion"
+  authors:
+    - family-names: Wang
+      given-names: Chong
+    - family-names: Fu
+      given-names: Zixuan
+    - family-names: Huang
+      given-names: Shiqi
+    - family-names: Yang
+      given-names: Siyuan
+    - family-names: Cheng
+      given-names: Hao
+    - family-names: Wen
+      given-names: Bihan
+  year: 2026
+  doi: "10.48550/arXiv.2609.36014"
+  url: "https://arxiv.org/abs/2609.36014"
