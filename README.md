@@ -4,7 +4,7 @@
 <sup>1</sup>Nanyang Technological University &nbsp;&nbsp; <sup>2</sup>KTH Royal Institute of Technology &nbsp;&nbsp; <sup>3</sup>Hebei University of Technology</p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/arXiv-Coming%20Soon-b31b1b?logo=arxiv" alt="arXiv coming soon" height="22">&nbsp;
+<a href="https://arxiv.org/abs/2609.36014"><img src="https://img.shields.io/badge/arXiv-2609.36014-b31b1b?logo=arxiv" alt="arXiv paper" height="22"></a>&nbsp;
 <a href="https://chongwang1024.github.io/PerF/"><img src="https://img.shields.io/badge/Project-Page-3273dc?logo=googlechrome&logoColor=white" alt="Project page" height="22"></a>&nbsp;
 <a href="https://huggingface.co/ChongWang1024/PerF"><img src="https://img.shields.io/badge/Hugging%20Face-Models-ffd21e?logo=huggingface&logoColor=ffd21e" alt="Hugging Face models" height="22"></a>
 </p>
